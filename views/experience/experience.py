@@ -6,11 +6,12 @@ def experience(title:str, body: str) -> rx.Component:
         rx.heading(
             title,
             color="white",
-            size="5",
+            font_size=["2em", "1.5em"],
             as_="bold"
         ),
         rx.text(
             body,
+            font_size=["1.5em", "1em"],
         ),
         rx.vstack(
             rx.grid(
@@ -19,7 +20,7 @@ def experience(title:str, body: str) -> rx.Component:
                     "Aún no cuento con experiencia en un trabajo formal, pero estoy en busca de poder adquirirla y usar todo el conocimiento que poseo",
                     "portfolio-icon.svg",
                     ),
-                width="70%",
+                width=["90%","70%"],
                 
             ),
             width="100%",

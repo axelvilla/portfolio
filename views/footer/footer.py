@@ -6,6 +6,7 @@ def footer() -> rx.Component:
         
         rx.text(
             "Axel Benjamin Villa",
+            font_size=["1.5em", "1em"],
         ),
         rx.hstack(
             footer_links("https://www.linkedin.com/in/axel-villa-a00a06318/", "/linkedin-icon.svg"),

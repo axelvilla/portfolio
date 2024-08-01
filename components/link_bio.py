@@ -8,6 +8,6 @@ def link_bio(text: str, url: str) -> rx.Component:
                 "background_color": "rgba(90, 51, 163, 0.2)"
             }, 
         color="white",
-        padding_x="1em",
+        font_size=["1.5em", "1em"],
         on_click=(rx.scroll_to(url))
     )

@@ -6,11 +6,12 @@ def stack(title:str, body: str) -> rx.Component:
         rx.heading(
             title,
             color="white",
-            size="5",
+            font_size=["2em", "1.5em"],
             as_="bold"
         ),
         rx.text(
             body,
+            font_size=["1.5em", "1em"],
         ),
         rx.hstack(
             rx.flex(
@@ -23,11 +24,13 @@ def stack(title:str, body: str) -> rx.Component:
                 flex_wrap="wrap",
                 spacing="2",
                 width="100%",
-                justify="center"
+                justify="center",
             ),
         ),
         align="center",
         width="100%",
+        padding_x="5em",
         spacing="4",
+        justify="center",
         id="habilidades"
     )

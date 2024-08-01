@@ -5,7 +5,8 @@ def footer_links(url: str, image:str) -> rx.Component:
         rx.button(
             rx.image(
                 src=image,
-                max_width="2em"
+                max_width=["3em","2em"],
+                alt=image
             ),
             
             bg="transparent",
@@ -17,4 +18,5 @@ def footer_links(url: str, image:str) -> rx.Component:
         underline="none",
         color="white",
         is_external=True,
+        margin_y="1em"
     )

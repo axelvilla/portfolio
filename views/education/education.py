@@ -6,11 +6,12 @@ def education(title:str, body: str) -> rx.Component:
         rx.heading(
             title,
             color="white",
-            size="5",
+            font_size=["2em", "1.5em"],
             as_="bold"
         ),
         rx.text(
             body,
+            font_size=["1.5em", "1em"],
         ),
         rx.vstack(
             rx.grid(
@@ -29,7 +30,7 @@ def education(title:str, body: str) -> rx.Component:
                     "Codo a Codo 4.0", 
                     "cac-icon.png"
                 ),
-                width="70%",
+                width=["90%", "70%"],
                 spacing="4"
             ),
             width="100%",

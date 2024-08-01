@@ -7,11 +7,13 @@ def stack_card(text:str, url:str) -> rx.Component:
                     rx.avatar(
                         src=url,
                         max_width="10em",
+                        size="6"
                     ),
                     rx.text(
                         text,
                         width="100%",
-                        align="center"
+                        align="center",
+                        font_size=["2.5em", "1em"],
                     ),
                     align="center",
                 ),

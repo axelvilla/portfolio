@@ -5,12 +5,13 @@ def header() -> rx.Component:
     return rx.vstack(
         rx.heading(
             "Hola, soy Axel Villa 👋",
-            size="8",
-            width="100%"
+            font_size=["3em", "3.5em"],
+            width="100%",
+            margin_bottom="0.5em"
             ),
         rx.text(
             "Desarrollador de Software",
-            size="4",
+            font_size=["2em", "2em"],
             width="100%"
             ),
         rx.hstack(
@@ -35,12 +36,13 @@ def header() -> rx.Component:
             width=["90%", "70%"],
             align="center"
         ),
-        rx.heading(
-            "Soy Axel Villa, futuro desarrollador de software",
-            size="5",
-            margin_top="1em",
-            width="100%"
-        ),
+        ##rx.heading(
+            ##"Soy Axel Villa, futuro desarrollador de software",
+            ##size="9",
+            ##font_size=["3em", "2.5em"],
+            ##margin_top="1em",
+            ##width=["90%", "100%"]
+        ##),
         rx.text(
             """
             Como desarrollador de software, me especializo en crear 
@@ -50,7 +52,9 @@ def header() -> rx.Component:
             ayudarte a desarrollar y perfeccionar tus propuestas. 
             ¡Construyamos el futuro de tu visión digital!
             """,
-            width="70%",
+            size="7",
+            font_size=["1.5em", "1.3em"],
+            width=["80%", "90%"],
             text_align="center",
             margin_bottom="1em"
         ),
@@ -58,6 +62,7 @@ def header() -> rx.Component:
             rx.image(
                 src="/downloadicon.svg",
                 max_width="2em",
+                alt="download icon"
                 ),
             "Descargar CV",
             on_click=rx.download(url="/CV_Gomex_Axel.pdf"),
@@ -66,7 +71,9 @@ def header() -> rx.Component:
             border="solid",
             border_color="grey",
             size="4",
+            font_size=["2em", "1em"],
             padding_x="3em",
+            padding_y=["1.5em", "1em"],
             _hover = {
                 "background_color": "rgba(255, 255, 255, 0.1)"
             },

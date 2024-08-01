@@ -11,24 +11,25 @@ def projects_card(title:str, body:str, stack:str, image:str, repo:str) -> rx.Com
                     max_width= "38%",
                     max_height= "12em",
                     object_fit= "cover",
-                    opacity="0.8"
+                    opacity="0.8",
+                    alt=image
                 ),
                 rx.box(
                     rx.heading(
                         title,
-                        size="6",
+                        font_size=["2em", "1em"],
                         as_="bold",
                         color="white"
                     ),
                     rx.text(
                         body,
-                        size="3",
+                        font_size=["1.5em", "1em"],
                         margin_bottom="1em",
                         color="white"
                     ),
                     rx.text(
                         stack,
-                        size="3",
+                        font_size=["1.5em", "1em"],
                         margin_bottom="1em",
                         color="white",
                     ),
@@ -41,6 +42,6 @@ def projects_card(title:str, body:str, stack:str, image:str, repo:str) -> rx.Com
                 ),
                 spacing="2",
             ),
-        width=["80%", "45%"]    ,
+        width=["90%", "45%"],
         margin_right="0.5em",
     )

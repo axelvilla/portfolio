@@ -41,7 +41,7 @@ def index() -> rx.Component:
         ),
         footer(),
         spacing="6",
-        width=["200%", "100%"],
+        width=["260%", "100%"],
         background="linear-gradient(100deg, rgba(131,58,180,0.2) 0%, rgba(139,69,109,0.2) 50%, rgba(40,102,46,0.2) 100%)",
         text_align="center"
         )

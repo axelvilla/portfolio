@@ -8,10 +8,12 @@ def projects(title:str, body: str) -> rx.Component:
             title,
             color="white",
             size="5",
+            font_size=["2em", "1.5em"],
             as_="bold"
         ),
         rx.text(
             body,
+            font_size=["1.5em", "1em"],
         ),
         rx.hstack(
             rx.flex(

@@ -5,17 +5,23 @@ def experience_card(title:str, body:str, img) -> rx.Component:
         rx.flex(
             rx.image(
                 src=img,
-                max_width="7%",
-                object_fit="cover"
+                max_width=["10%","7%"],
+                object_fit="cover",
+                alt=img
             ),
             rx.box(
-                rx.heading(title),
+                rx.heading(
+                    title,
+                    font_size=["2em", "1em"],
+                ),
                 rx.text(
-                    body
+                    body,
+                    font_size=["1.5em", "1em"],
                 ),
             ),
             spacing="2",
             align="center"    
         ),
         width="100%",
+        padding_top="1em"
     ),
