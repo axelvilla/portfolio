@@ -9,7 +9,6 @@ from views.footer.footer import footer
 
 from rxconfig import config
 
-
 class State(rx.State):
     pass
 

@@ -15,12 +15,16 @@ def stack(title:str, body: str) -> rx.Component:
         ),
         rx.hstack(
             rx.flex(
-                stack_card("Java", "java-icon.svg"),
-                stack_card("MySQL", "mysql-icon.svg"),
                 stack_card("HTML", "html-icon.svg"),
                 stack_card("CSS", "css-icon.svg"),
+                stack_card("BootStrap", "bootstrap-icon.svg"),
+                stack_card("Tailwind", "tailwind-icon.svg"),
                 stack_card("Python", "python-icon.svg"),
                 stack_card("Flask", "flask-svgrepo-com.svg"),
+                stack_card("Java", "java-icon.svg"),
+                stack_card("MySQL", "mysql-icon.svg"),
+                stack_card("Vercel", "vercel-logo.svg"),
+                stack_card("GitHub", "github-white-icon.svg"),
                 flex_wrap="wrap",
                 spacing="2",
                 width="100%",

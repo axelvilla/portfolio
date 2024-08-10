@@ -6,7 +6,7 @@ def link_button(text: str, url: str, logo:str) -> rx.Component:
         rx.button(
             rx.image(
             src=logo,
-            max_width=["1.5em", "2em"],
+            max_width=["1.5em", "1em"],
             alt=logo
         ),
             text,
@@ -14,7 +14,7 @@ def link_button(text: str, url: str, logo:str) -> rx.Component:
             font_size=["2em", "1.5em"],
             bg="black",
             border="solid",
-            border_color="rgb(90, 51, 163)",
+            border_color="rgba(90, 51, 163, 0.6)",
             _hover = {
                 "background_color": "rgba(90, 51, 163, 0.2)"
             },

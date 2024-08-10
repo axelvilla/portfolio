@@ -23,6 +23,7 @@ def projects(title:str, body: str) -> rx.Component:
                     "HTML, CSS, JavaScript",
                     "work_page.png",
                     "https://github.com/axelvilla/Empleos_FrontEnd",
+                    "https://axelvilla.github.io/Empleos_FrontEnd/",
                     ),
                 projects_card(
                     "Sistema de Gestión Veterinaria", 
@@ -30,6 +31,7 @@ def projects(title:str, body: str) -> rx.Component:
                     "HTML, Bootstrap, Python, Flask", 
                     "back.png",
                     "https://github.com/axelvilla/BackEnd_Python",
+                    "https://cburgi.pythonanywhere.com/"
                     ),
                 projects_card(
                     "Citador de Bibliografía", 
@@ -37,6 +39,7 @@ def projects(title:str, body: str) -> rx.Component:
                     "HTML, Bootstrap, Python, Flask",
                     "apa.jpg",
                     "https://github.com/axelvilla/ReferenciasApa",
+                    "https://github.com/axelvilla/ReferenciasApa"
                     ),
                 flex_wrap="wrap",
                 spacing="2",

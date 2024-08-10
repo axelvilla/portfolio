@@ -1,7 +1,7 @@
 import reflex as rx
 from components.link_button import link_button
 
-def projects_card(title:str, body:str, stack:str, image:str, repo:str) -> rx.Component:
+def projects_card(title:str, body:str, stack:str, image:str, repo:str, web:str) -> rx.Component:
     return rx.card(
             rx.flex(
                 rx.image(
@@ -15,23 +15,27 @@ def projects_card(title:str, body:str, stack:str, image:str, repo:str) -> rx.Com
                     alt=image
                 ),
                 rx.box(
-                    rx.heading(
-                        title,
-                        font_size=["2em", "1em"],
-                        as_="bold",
-                        color="white"
-                    ),
-                    rx.text(
-                        body,
-                        font_size=["1.5em", "1em"],
-                        margin_bottom="1em",
-                        color="white"
-                    ),
-                    rx.text(
-                        stack,
-                        font_size=["1.5em", "1em"],
-                        margin_bottom="1em",
-                        color="white",
+                    rx.link(
+                        rx.heading(
+                            title,
+                            font_size=["2em", "1em"],
+                            as_="bold",
+                            color="white"
+                        ),
+                        rx.text(
+                            body,
+                            font_size=["1.5em", "1em"],
+                            margin_bottom="1em",
+                            color="white"
+                        ),
+                        rx.text(
+                            stack,
+                            font_size=["1.5em", "1em"],
+                            margin_bottom="1em",
+                            color="white",
+                        ),
+                        href=web,
+                        is_external=True
                     ),
                     link_button(
                         "Ver más",
