@@ -10,7 +10,7 @@ def header() -> rx.Component:
             margin_bottom="0.5em"
             ),
         rx.text(
-            "Desarrollador de Software",
+            "Desarrollador Full Stack - Pyhton",
             font_size=["2em", "2em"],
             width="100%"
             ),

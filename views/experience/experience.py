@@ -16,9 +16,9 @@ def experience(title:str, body: str) -> rx.Component:
         rx.vstack(
             rx.grid(
                 experience_card(
-                    "En busca de experiencia", 
-                    "Aún no cuento con experiencia en un trabajo formal, pero estoy en busca de poder adquirirla y usar todo el conocimiento que poseo",
-                    "portfolio-icon.svg",
+                    "Instructor de Java", 
+                    "Escuela Superior de Comercio N° 43",
+                    "teacher-icon.svg",
                     ),
                 width=["90%","70%"],
                 
