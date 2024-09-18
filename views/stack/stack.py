@@ -22,6 +22,7 @@ def stack(title:str, body: str) -> rx.Component:
                 stack_card("Python", "python-icon.svg"),
                 stack_card("Flask", "flask-svgrepo-com.svg"),
                 stack_card("Java", "java-icon.svg"),
+                stack_card("Hibernate", "hibernate-icon.svg"),
                 stack_card("MySQL", "mysql-icon.svg"),
                 stack_card("Vercel", "vercel-logo.svg"),
                 stack_card("GitHub", "github-white-icon.svg"),

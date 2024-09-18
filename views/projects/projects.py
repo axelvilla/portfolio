@@ -39,7 +39,7 @@ def projects(title:str, body: str) -> rx.Component:
                     "HTML, Bootstrap, Python, Flask",
                     "apa.jpg",
                     "https://github.com/axelvilla/ReferenciasApa",
-                    "https://github.com/axelvilla/ReferenciasApa"
+                    "https://axelvilla1.pythonanywhere.com/"
                     ),
                 flex_wrap="wrap",
                 spacing="2",
