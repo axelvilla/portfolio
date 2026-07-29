@@ -1,7 +1,7 @@
 *.db
 *.py[cod]
+.superpowers/
 .web
 __pycache__/
 assets/external/
 venv
-.superpowers/
