@@ -1,14 +1,14 @@
 """Centralized design tokens for the TRON-inspired visual theme."""
 
-BG = "#000000"
-BG_PANEL = "#0A0A0A"
+BG = "var(--tron-bg)"
+BG_PANEL = "var(--tron-bg-panel)"
 
-CYAN = "#5CF6FF"
-CYAN_BORDER = "rgba(92, 246, 255, 0.25)"
-ORANGE = "#F2994A"
+CYAN = "var(--tron-cyan)"
+CYAN_BORDER = "var(--tron-border)"
+ORANGE = "var(--tron-orange)"
 
-TEXT_PRIMARY = "#EAF6F6"
-TEXT_MUTED = "#8FA3A3"
+TEXT_PRIMARY = "var(--tron-text)"
+TEXT_MUTED = "var(--tron-text-muted)"
 
 FONT_DISPLAY = "'Orbitron', sans-serif"
 FONT_BODY = "'Space Grotesk', sans-serif"

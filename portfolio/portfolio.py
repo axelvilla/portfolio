@@ -60,6 +60,9 @@ app = rx.App(
         appearance="dark",
         has_background=True,
     ),
-    stylesheets=["/styles/tron.css"],
+    stylesheets=[
+        "https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Space+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap",
+        "/styles/tron.css",
+    ],
 )
 app.add_page(index)
