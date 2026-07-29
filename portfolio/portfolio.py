@@ -11,6 +11,13 @@ from portfolio.theme import BG
 
 from rxconfig import config
 
+meta = [
+    {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1, shrink-to-fit=no",
+    },
+]
+
 class State(rx.State):
     pass
 
@@ -65,4 +72,4 @@ app = rx.App(
         "/styles/tron.css",
     ],
 )
-app.add_page(index)
+app.add_page(index, meta=meta)
