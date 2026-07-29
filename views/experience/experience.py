@@ -17,13 +17,23 @@ def experience(title:str, body: str) -> rx.Component:
         rx.vstack(
             rx.grid(
                 experience_card(
-                    "Desarrollador Full Stack y Líder de Proyecto — Freelance (2025)",
-                    [
-                        "Login App: sistema de autenticación con React.js + Flask + MySQL, validación de credenciales, sesiones seguras y arquitectura modular.",
-                        "Filter App: gestión y filtrado de datos con backend en FastAPI y frontend en React.js.",
-                        "Sistema de Laboratorio de Análisis Clínicos: backend en Node.js, frontend en Next.js/React, y persistencia con MySQL + Prisma; incluye autenticación, gestión de pacientes y carga de resultados.",
-                        "Punto de Venta para Verdulería: backend en Java (Spring Boot), frontend en Next.js, MySQL y Docker, para gestionar productos, stock y ventas.",
-                    ],
+                    "Login App",
+                    "Sistema de autenticación con React.js + Flask + MySQL, validación de credenciales, sesiones seguras y arquitectura modular. Freelance / Proyectos de GitHub (2025).",
+                    "github-icon.svg",
+                    ),
+                experience_card(
+                    "Filter App",
+                    "Gestión y filtrado de datos con backend en FastAPI y frontend en React.js. Freelance / Proyectos de GitHub (2025).",
+                    "github-icon.svg",
+                    ),
+                experience_card(
+                    "Sistema de Laboratorio de Análisis Clínicos",
+                    "Backend en Node.js, frontend en Next.js/React, y persistencia con MySQL + Prisma; incluye autenticación, gestión de pacientes y carga de resultados. Freelance / Proyectos de GitHub (2025).",
+                    "github-icon.svg",
+                    ),
+                experience_card(
+                    "Punto de Venta para Verdulería",
+                    "Backend en Java (Spring Boot), frontend en Next.js, MySQL y Docker, para gestionar productos, stock y ventas. Freelance / Proyectos de GitHub (2025).",
                     "github-icon.svg",
                     ),
                 experience_card(

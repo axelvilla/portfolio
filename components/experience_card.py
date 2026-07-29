@@ -3,27 +3,12 @@ from components.hud_frame import hud_frame
 from portfolio.theme import TEXT_PRIMARY, TEXT_MUTED, FONT_DISPLAY
 
 
-def experience_card(title: str, body, img: str) -> rx.Component:
-    if isinstance(body, list):
-        body_content = rx.vstack(
-            *[
-                rx.text(
-                    f"▸ {item}",
-                    font_size=["1.4em", "0.95em"],
-                    color=TEXT_MUTED,
-                    text_align="left",
-                )
-                for item in body
-            ],
-            align="start",
-            spacing="1",
-        )
-    else:
-        body_content = rx.text(
-            body,
-            font_size=["1.5em", "1em"],
-            color=TEXT_MUTED,
-        )
+def experience_card(title: str, body: str, img: str) -> rx.Component:
+    body_content = rx.text(
+        body,
+        font_size=["1.5em", "1em"],
+        color=TEXT_MUTED,
+    )
     return hud_frame(
         rx.flex(
             rx.image(
