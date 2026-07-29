@@ -29,6 +29,7 @@ def projects_card(title: str, body: str, stack: str, web: str) -> rx.Component:
                 "Ver sitio en vivo →",
                 href=web,
                 is_external=True,
+                rel="noopener noreferrer",
                 color=CYAN,
                 font_family=FONT_MONO,
                 font_size=["1.3em", "0.9em"],

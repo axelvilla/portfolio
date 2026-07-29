@@ -1,11 +1,12 @@
 import reflex as rx
 from components.stack_card import stack_card
+from portfolio.theme import TEXT_PRIMARY
 
 def stack(title:str, body: str) -> rx.Component:
     return rx.vstack(
         rx.heading(
             title,
-            color="white",
+            color=TEXT_PRIMARY,
             size="5",
             font_size=["2em", "1.5em"],
             as_="bold"

@@ -24,5 +24,6 @@ def link_button(text: str, url: str, logo:str) -> rx.Component:
         href=url,
         underline="none",
         color=TEXT_PRIMARY,
+        rel="noopener noreferrer",
 
     )

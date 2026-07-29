@@ -1,11 +1,12 @@
 import reflex as rx
 from components.experience_card import experience_card
+from portfolio.theme import TEXT_PRIMARY
 
 def education(title:str, body: str) -> rx.Component:
     return rx.vstack(
         rx.heading(
             title,
-            color="white",
+            color=TEXT_PRIMARY,
             font_size=["2em", "1.5em"],
             as_="bold"
         ),

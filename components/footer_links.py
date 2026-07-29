@@ -16,5 +16,6 @@ def footer_links(url: str, image:str) -> rx.Component:
         underline="none",
         color=TEXT_PRIMARY,
         is_external=True,
+        rel="noopener noreferrer",
         margin_y="1em"
     )

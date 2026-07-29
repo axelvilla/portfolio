@@ -1,6 +1,6 @@
 import reflex as rx
 from components.link_button import link_button
-from portfolio.theme import TEXT_PRIMARY
+from portfolio.theme import TEXT_PRIMARY, BG_PANEL, CYAN_BORDER
 
 def header() -> rx.Component:
     return rx.vstack(
@@ -37,7 +37,9 @@ def header() -> rx.Component:
                 "/email-icon.svg"
                 ),
             width=["90%", "70%"],
-            align="center"
+            align="center",
+            wrap="wrap",
+            justify="center",
         ),
         rx.text(
             """
@@ -63,10 +65,10 @@ def header() -> rx.Component:
                 ),
             "Descargar CV",
             on_click=rx.download(url="/CV_Gomez_Axel.pdf"),
-            bg="black",
+            bg=BG_PANEL,
             color=TEXT_PRIMARY,
             border="solid",
-            border_color="grey",
+            border_color=CYAN_BORDER,
             size="4",
             font_size=["2em", "1em"],
             padding_x="3em",
