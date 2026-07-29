@@ -70,8 +70,8 @@ def header() -> rx.Component:
             border="solid",
             border_color=CYAN_BORDER,
             size="4",
-            font_size=["2em", "1em"],
-            padding_x="3em",
+            font_size=["1.3em", "1em"],
+            padding_x=["1.2em", "3em"],
             padding_y=["1.5em", "1em"],
             class_name="btn-power btn-power-primary",
 

@@ -45,7 +45,7 @@ def stack(title:str, body: str) -> rx.Component:
         ),
         align="center",
         width="100%",
-        padding_x="5em",
+        padding_x=["1em", "5em"],
         spacing="4",
         justify="center",
         id="habilidades",
