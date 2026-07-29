@@ -1,11 +1,13 @@
 import reflex as rx
 from views.header.header import header
 from components.navbar import navbar
+from components.grid_background import grid_background
 from views.stack.stack import stack
 from views.projects.projects import projects
 from views.experience.experience import experience
 from views.education.education import education
 from views.footer.footer import footer
+from portfolio.theme import BG
 
 from rxconfig import config
 
@@ -16,32 +18,39 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.vstack(
         navbar(),
-        rx.center(
-            header(),
-            ##width="100%",
-            ##align="center",
-            ##justify="center"
+        rx.box(
+            grid_background(),
+            rx.center(header(), position="relative", width="100%"),
+            position="relative",
+            overflow="hidden",
+            width="100%",
         ),
+        rx.box(class_name="scan-divider"),
         stack(
-            "HABILIDADES", 
+            "HABILIDADES",
             "Algunas de mis habilidades destacadas",
         ),
+        rx.box(class_name="scan-divider"),
         projects(
-            "PROYECTOS", 
+            "PROYECTOS",
             "Algunos de mis proyectos"
         ),
+        rx.box(class_name="scan-divider"),
         experience(
-            "EXPERIENCIA", 
+            "EXPERIENCIA",
             "Estas son algunas de mis experiencias profesionales"
         ),
+        rx.box(class_name="scan-divider"),
         education(
-            "FORMACIÓN", 
+            "FORMACIÓN",
             "Estos son mis estudios y otras formaciones complementarias"
         ),
+        rx.box(class_name="scan-divider"),
         footer(),
+        rx.script(src="/scripts/scroll-reveal.js"),
         spacing="6",
-        width=["260%", "100%"],
-        background="linear-gradient(100deg, rgba(131,58,180,0.2) 0%, rgba(139,69,109,0.2) 50%, rgba(40,102,46,0.2) 100%)",
+        width="100%",
+        background=BG,
         text_align="center"
         )
 
@@ -50,6 +59,7 @@ app = rx.App(
     theme=rx.theme(
         appearance="dark",
         has_background=True,
-    )
+    ),
+    stylesheets=["/styles/tron.css"],
 )
 app.add_page(index)
