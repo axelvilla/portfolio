@@ -16,19 +16,24 @@ def education(title:str, body: str) -> rx.Component:
         rx.vstack(
             rx.grid(
                 experience_card(
-                    "Técnico Superior en Desarrollo de Software", 
-                    "Escuela Superior de Comercio N° 43", 
+                    "Técnico Superior en Desarrollo de Software",
+                    "Escuela Superior de Comercio N° 43",
                     "escuela-icon.png"
                 ),
                 experience_card(
-                    "Programación Inicial", 
-                    "Codo a Codo 4.0", 
+                    "Full Stack Python",
+                    "Codo a Codo 4.0",
                     "cac-icon.png"
                 ),
                 experience_card(
-                    "Full Stack Python", 
-                    "Codo a Codo 4.0", 
+                    "Full Stack Java",
+                    "Codo a Codo 4.0",
                     "cac-icon.png"
+                ),
+                experience_card(
+                    "Full Stack Javascript",
+                    "Bootcamp: JSCamp InfoJobs",
+                    "javascript-icon.svg"
                 ),
                 width=["90%", "70%"],
                 spacing="4"
@@ -38,5 +43,6 @@ def education(title:str, body: str) -> rx.Component:
         ),
         align="center",
         width="100%",
-        id="education"
+        id="education",
+        class_name="reveal",
     )
