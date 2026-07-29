@@ -7,6 +7,7 @@ def header() -> rx.Component:
         rx.heading(
             "Hola, soy Axel Villa 👋",
             font_size=["3em", "3.5em"],
+            line_height="1.2",
             width="100%",
             margin_bottom="0.5em",
             class_name="hero-name-decode",

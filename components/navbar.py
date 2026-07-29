@@ -10,4 +10,6 @@ def navbar() -> rx.Component:
         link_bio("FORMACION", "education"),
         width="100%",
         padding="2em",
+        wrap="wrap",
+        justify="center",
     )
