@@ -1,51 +1,45 @@
 import reflex as rx
-from components.link_button import link_button
+from components.hud_frame import hud_frame
+from portfolio.theme import CYAN, TEXT_PRIMARY, TEXT_MUTED, FONT_DISPLAY, FONT_MONO
 
-def projects_card(title:str, body:str, stack:str, image:str, repo:str, web:str) -> rx.Component:
-    return rx.card(
-            rx.flex(
-                rx.image(
-                    src=image,
-                    ##max_width="5em",
-                    border_radius= "8px",
-                    max_width= "38%",
-                    max_height= "12em",
-                    object_fit= "cover",
-                    opacity="0.8",
-                    alt=image
-                ),
-                rx.box(
-                    rx.link(
-                        rx.heading(
-                            title,
-                            font_size=["2em", "1em"],
-                            as_="bold",
-                            color="white"
-                        ),
-                        rx.text(
-                            body,
-                            font_size=["1.5em", "1em"],
-                            margin_bottom="1em",
-                            color="white"
-                        ),
-                        rx.text(
-                            stack,
-                            font_size=["1.5em", "1em"],
-                            margin_bottom="1em",
-                            color="white",
-                        ),
-                        href=web,
-                        is_external=True
-                    ),
-                    link_button(
-                        "Ver más",
-                        repo,
-                        "link-icon.svg"
-                    ),
-                    margin_left="1em"
-                ),
-                spacing="2",
+
+def projects_card(title: str, body: str, stack: str, web: str) -> rx.Component:
+    return hud_frame(
+        rx.vstack(
+            rx.heading(
+                title,
+                font_size=["2em", "1.2em"],
+                font_family=FONT_DISPLAY,
+                color=TEXT_PRIMARY,
             ),
+            rx.text(
+                body,
+                font_size=["1.5em", "1em"],
+                color=TEXT_MUTED,
+            ),
+            rx.text(
+                stack,
+                font_family=FONT_MONO,
+                letter_spacing="0.05em",
+                text_transform="uppercase",
+                font_size=["1.2em", "0.85em"],
+                color=CYAN,
+            ),
+            rx.link(
+                "Ver sitio en vivo →",
+                href=web,
+                is_external=True,
+                color=CYAN,
+                font_family=FONT_MONO,
+                font_size=["1.3em", "0.9em"],
+                underline="none",
+                margin_top="0.5em",
+            ),
+            align="start",
+            spacing="2",
+            width="100%",
+        ),
         width=["90%", "45%"],
         margin_right="0.5em",
+        padding="1.5em",
     )

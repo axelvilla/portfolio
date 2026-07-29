@@ -1,6 +1,5 @@
 import reflex as rx
 from components.projects_card import projects_card
-from components.stack_projects import stack_projects
 
 def projects(title:str, body: str) -> rx.Component:
     return rx.vstack(
@@ -18,28 +17,28 @@ def projects(title:str, body: str) -> rx.Component:
         rx.hstack(
             rx.flex(
                 projects_card(
-                    "Amanzing Jobs", 
-                    "Página dedicada a la busqueda de empleo",
-                    "HTML, CSS, JavaScript",
-                    "work_page.png",
-                    "https://github.com/axelvilla/Empleos_FrontEnd",
-                    "https://axelvilla.github.io/Empleos_FrontEnd/",
+                    "Tienda Informática",
+                    "E-commerce de componentes y periféricos de PC, con filtros por categoría y marca, y un configurador \"Armá tu PC\".",
+                    "React, Tailwind",
+                    "https://informatica-sepia.vercel.app/",
                     ),
                 projects_card(
-                    "Sistema de Gestión Veterinaria", 
-                    "Sistema de manejo de clientes",
-                    "HTML, Bootstrap, Python, Flask", 
-                    "back.png",
-                    "https://github.com/axelvilla/BackEnd_Python",
-                    "https://cburgi.pythonanywhere.com/"
+                    "1step",
+                    "Plataforma de software a medida para automatizar y centralizar las operaciones de negocios de servicios.",
+                    "React, Tailwind",
+                    "https://1stepservice.vercel.app/",
                     ),
                 projects_card(
-                    "Citador de Bibliografía", 
-                    "Página para citar bibliografía con normas APA", 
-                    "HTML, Bootstrap, Python, Flask",
-                    "apa.jpg",
-                    "https://github.com/axelvilla/ReferenciasApa",
-                    "https://axelvilla1.pythonanywhere.com/"
+                    "Inmobiliaria Reconquista",
+                    "Portal inmobiliario con búsqueda filtrada de propiedades en venta y alquiler.",
+                    "React, Tailwind",
+                    "https://inmobiliaria-reconquista.vercel.app/",
+                    ),
+                projects_card(
+                    "La Cumbre",
+                    "Sitio de la verdulería La Cumbre: catálogo de ofertas, galería de productos y pedidos por WhatsApp.",
+                    "React, Tailwind",
+                    "https://lacumbre.netlify.app/",
                     ),
                 flex_wrap="wrap",
                 spacing="2",
@@ -47,9 +46,10 @@ def projects(title:str, body: str) -> rx.Component:
                 justify="center",
             ),
             width="100%",
-            justify="center", 
+            justify="center",
         ),
     align="center",
     width="100%",
-    id="projects"
+    id="projects",
+    class_name="reveal",
     )
