@@ -24,13 +24,11 @@ def header() -> rx.Component:
                 "/github-icon.svg",
 
                 ),
-            rx.spacer(),
             link_button(
                 "Linkedin",
                 "https://www.linkedin.com/in/axel-villa-a00a06318/",
                 "/linkedin-icon.svg"
                 ),
-            rx.spacer(),
             link_button(
                 "Email",
                 "mailto:axelvilla746@gmail.com",
@@ -38,6 +36,7 @@ def header() -> rx.Component:
                 ),
             width=["90%", "70%"],
             align="center",
+            spacing="4",
             wrap="wrap",
             justify="center",
         ),
