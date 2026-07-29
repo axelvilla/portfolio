@@ -1,4 +1,5 @@
 import reflex as rx
+from portfolio.theme import TEXT_PRIMARY
 
 def footer_links(url: str, image:str) -> rx.Component:
     return rx.link(
@@ -8,15 +9,12 @@ def footer_links(url: str, image:str) -> rx.Component:
                 max_width=["3em","2em"],
                 alt=image
             ),
-            
             bg="transparent",
-            _hover = {
-                "background_color": "rgba(90, 51, 163, 0.2)"
-            },
+            class_name="btn-power",
         ),
         href=url,
         underline="none",
-        color="white",
+        color=TEXT_PRIMARY,
         is_external=True,
         margin_y="1em"
     )
